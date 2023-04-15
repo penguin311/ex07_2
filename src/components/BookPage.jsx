@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import {Row, Col, Button, Form, InputGroup, Card} from 'react-bootstrap'
-import {BsSearch} from 'react-icons/bs'
 import axios from 'axios'
 import Book from './Book';
 
@@ -50,7 +49,7 @@ const BookPage = () => {
                         <InputGroup>
                             <Form.Control value={query} placeholder='검색어'
                                 onChange={(e)=>setQuery(e.target.value)}/>
-                            <InputGroup.Text><BsSearch/></InputGroup.Text>
+                            
                         </InputGroup>
                     </Form>
                 </Col>
